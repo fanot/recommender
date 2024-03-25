@@ -75,7 +75,7 @@ def predict():
                 return make_response(jsonify({'message': 'Movies names list consist not only of ints'}), 400)
         except KeyError as e:
             logger.error(e)
-            return make_response(jsonify({'message': 'No \'movie_names_ratings\' key in JSON data'}), 400)
+            return make_response(jsonify({'message': 'No \'movies_ratings\' key in JSON data'}), 400)
         except json.decoder.JSONDecodeError as e:
             logger.error(e)
             return make_response(jsonify({'message': 'Invalid JSON data'}), 400)
