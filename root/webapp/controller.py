@@ -39,7 +39,7 @@ def predict():
     M: int (default 20)
 
     output:
-    Responce with JSON data:
+    Response with JSON data:
         {'message': list([movie_name_1, movie_name_2, .., movie_name_M], [rating_1, rating_2, .., rating_M]])}
     """
     logger.info('reached /api/predict/ endpoint')
@@ -55,17 +55,15 @@ def predict():
             movie_names = movie_names_ratings[0]
             ratings = movie_names_ratings[1]
 
-            if 'M' in request_data:
-                m = request_data['M']
-
-            if not isinstance(m, int) or (isinstance(m, int) and (m < 1 or m > 25)):
+            m = request_data.get('M', 20)  # Set default value for m if not provided in request_data
+            if not isinstance(m, int) or not (1 <= m <= 25):
                 m = 20
 
             if not isinstance(movie_names_ratings, list):
                 return make_response(jsonify({'message': 'Given values are not double lists'}), 400)
 
             if len(movie_names_ratings) != 2:
-                return make_response(jsonify({'message': 'Expected only two array'}), 400)
+                return make_response(jsonify({'message': 'Expected only two arrays'}), 400)
 
             if len(movie_names) != len(ratings):
                 return make_response(jsonify({'message': 'Lists have different sizes'}), 400)
