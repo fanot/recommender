@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  root:
+        container_name: recommemder_system
+        build: root
+        restart: on-failure
+        ports:
+          - 5000:5000
+        volumes:
+          - "./data:/data"
+          - "./logs:/logs"
