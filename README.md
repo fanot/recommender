@@ -1,7 +1,7 @@
 # Recommender System Based on Matrix Factorization
 
-**This project represents the implementation of a recommendation system based on matrix factorization performed on the 5th module of the 3rd year of HITS, Tomsk State University, Tomsk.
-**
+This project represents the implementation of a recommendation system based on matrix factorization performed on the 5th module of the 3rd year of HITS, Tomsk State University, Tomsk.
+
 ## Installation
 
 ### Within Docker
