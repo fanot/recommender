@@ -9,7 +9,7 @@ This project represents the implementation of a recommendation system based on m
 If you want to run the project in Docker, follow these instructions:
 
 1. Enter into project's folder
-2. Run docker compose*
+2. Run docker composer
 Now server is running and listening on 127.0.0.1:5000
 
 ### Without Docker
