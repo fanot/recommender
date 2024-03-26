@@ -65,9 +65,9 @@ Example:
 "N": 5
 }
 
-/api/surprise_evaluate: 
-Evaluate sklearn-surprise based model and renew best accuracy.
-
+/api/evaluate: 
+ based model
+Note:also it works with surprise(sirprise_evaluate, etc)
 
 ## Sources
 
