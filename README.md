@@ -27,11 +27,11 @@ ex(python model/model.py train --dataset='data/train/ratings_train.dat' )
 
 foo@bar:$ python model.py evaluate --dataset=/path/to/evaluation/dataset
 
-ex(python model/model.py evaluate --dataset='data/test/ratings_test.dat' trained) 
+ex(python model/model.py evaluate --dataset='data/test/ratings_test.dat') 
 
 foo@bar:~$ python model.py predict --dataset=/path/to/evaluation/dataset
 
-ex(python model/model.py predict --dataset='data/test/ratings_test.dat' trained)
+ex(python model/model.py predict --dataset='data/test/ratings_test.dat')
 
 Note: use from cli branch, also it works with surprise(sirprise_evaluate, etc)
 ## Fanot's API
