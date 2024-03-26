@@ -21,19 +21,13 @@ If you want to run the project without Docker:
 Now server is running on the same address
 
 ## CLI
-foo@bar:~$ python model.py train --dataset=/path/to/train/dataset
-ex(python model/model.py train --dataset='data/train/ratings_train.dat'
-)
-foo@bar:~$ python model.py evaluate --dataset=/path/to/evaluation/dataset
-ex(python model/model.py evaluate --dataset='data/test/ratings_test.dat'
-trained)
-ex(python model/model.py evaluate --dataset='data/test/ratings_test.dat'
-trained)
+foo@bar:$ python model.py train --dataset=/path/to/train/dataset
+ex(python model/model.py train --dataset='data/train/ratings_train.dat' ) 
+foo@bar:$ python model.py evaluate --dataset=/path/to/evaluation/dataset
+ex(python model/model.py evaluate --dataset='data/test/ratings_test.dat' trained) 
 foo@bar:~$ python model.py predict --dataset=/path/to/evaluation/dataset
-
-ex(python model/model.py predict --dataset='data/test/ratings_test.dat'
-trained)
-
+ex(python model/model.py predict --dataset='data/test/ratings_test.dat' trained)
+Note: use from cli branch
 ## Fanot's API
 
 Endpoints:
