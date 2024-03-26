@@ -32,19 +32,36 @@ Note: use from cli branch
 
 Endpoints:
 
-/api/predict. Receives list [[movie_name_1, movie_name_2, .., movie_name_N ], [rating_1, rating_2, .., rating_N]] and returns TOP M (default 20, also a parameter) recommended movies with corresponding estimated rating. Sort descending. [[movie_name_1, movie_name_2, .., movie_name_M], [rating_1, rating_2, .., rating_M]]
-example -{ "movies_ratings": [
-        ["Inception", "The Dark Knight", "Interstellar"],
-        [4, 4, 4]
-    ]}
-/api/log. Last 20 rows of log.
-/api/info. Service Information: Your Credentials, Date and time of the build of the Docker image, Date, time and metrics of the training of the currently deployed model.
-/api/reload. Reload the model.
-/api/similar. returns list of similar movies {
-  "movie_name": "Rushmore",
-  "N": 5
+/api/predict: 
+Receives a list [[movie_name_1, movie_name_2, .., movie_name_N ], [rating_1, rating_2, .., rating_N]] and returns TOP M (default 20, also a parameter) recommended movies with corresponding estimated rating. Sort descending. 
+Example:
+{
+"movies_ratings": [
+["Inception", "The Dark Knight", "Interstellar"],
+[4, 4, 4]
+]
 }
-api/surprise_evaluate. evaluate sklearn-surprise based model and renew best accuracy.
+
+/api/log: 
+Last 20 rows of log.
+
+/api/info: 
+Service Information: Your Credentials, Date and time of the build of the Docker image, Date, time and metrics of the training of the currently deployed model.
+
+/api/reload: 
+Reload the model.
+
+/api/similar: 
+Returns a list of similar movies. 
+Example:
+{
+"movie_name": "Rushmore",
+"N": 5
+}
+
+/api/surprise_evaluate: 
+Evaluate sklearn-surprise based model and renew best accuracy.
+
 
 ## Sources
 
