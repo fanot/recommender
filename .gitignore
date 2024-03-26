@@ -1,0 +1,26 @@
+# Virtual environment
+venv/
+env/
+
+# Compiled Python files
+__pycache__
+
+# Dependency directories
+.venv/
+env.bak/
+env1/
+venv1/
+envs/
+venvs/
+.venvs/
+lib/
+libs/
+dist/
+build/
+
+# Logs
+*.logs
+
+
+# Other
+.idea/
