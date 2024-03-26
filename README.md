@@ -33,7 +33,7 @@ foo@bar:~$ python model.py predict --dataset=/path/to/evaluation/dataset
 
 ex(python model/model.py predict --dataset='data/test/ratings_test.dat' trained)
 
-Note: use from cli branch
+Note: use from cli branch, also it works with surprise(sirprise_evaluate, etc)
 ## Fanot's API
 
 Endpoints:
