@@ -6,7 +6,7 @@ Within Docker
 If you want to run project in Docker - follow these instructions:
 
 1. Enter into project's folder
-   \$ cd /path/to/recsys-mf/
+   \$ cd /path/to/recommender/
 2. Run docker compose*
    \$ docker-compose up --build
   
