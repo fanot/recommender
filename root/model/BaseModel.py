@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from model.options import BaseOptions
+from options import BaseOptions
 
 class BaseModel(ABC):
     def __init__(self, n_vectors: int = 5):

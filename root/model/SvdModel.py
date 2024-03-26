@@ -3,8 +3,8 @@ import logging
 import numpy as np
 import pandas as pd
 from scipy.sparse.linalg import svds
-from model.BaseModel import BaseModel
-from model.options import BaseOptions
+from BaseModel import BaseModel
+from options import BaseOptions
 
 logger = logging.getLogger(__name__)
 

@@ -1,5 +1,5 @@
-# Используем базовый образ Python 3.10.6 из официального репозитория Python
-FROM python:3.10.6-buster
+# Используем базовый образ Python 3.8 из официального репозитория Python
+FROM python:3.8-buster
 
 # Копируем содержимое текущей директории в Docker-образ
 COPY . .
@@ -8,8 +8,7 @@ COPY . .
 WORKDIR ./
 
 # Записываем текущую дату в credentials.txt и добавляем "Karina" к ней
-RUN /bin/bash -c 'echo "$(date)" > credentials.txt && \
-    echo "Karina" >> credentials.txt'
+RUN date > credentials.txt && echo "Karina" >> credentials.txt
 
 # Устанавливаем зависимости Python из requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt

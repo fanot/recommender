@@ -2,14 +2,14 @@ from __future__ import absolute_import
 import pytz
 from skimage.metrics import mean_squared_error
 
-from model.SvdModel import *
+from SvdModel import *
 
 import fire
 import numpy as np
 import pandas as pd
 import os
 
-from model.options import BaseOptions
+from options import BaseOptions
 from datetime import datetime
 from sklearn.metrics import mean_squared_error
 import surprise
@@ -1069,7 +1069,7 @@ class CliWrapper(object):
 
         self.root.train()
         rmse = self.root.evaluate(dataset)
-        logger.info('evaluate method successfully executed')
+        logger.info('evaluate method successfully executed', rmse)
 
     def predict(self, dataset: str = None, amount: int = 5):
         """Method that predict top {amount} similar movies
