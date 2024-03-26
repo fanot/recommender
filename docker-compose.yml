@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   root:
-        container_name: recommemder_system
+        container_name: recommemder
         build: root
         restart: on-failure
         ports:
