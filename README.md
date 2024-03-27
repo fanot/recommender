@@ -12,6 +12,9 @@ If you want to run the project in Docker, follow these instructions:
 2. Run docker composer
 Now server is running and listening on 127.0.0.1:5000
 
+or just run
+
+docker run -d -p 5000:5000 fanot/root-docker-image:latest
 ### Without Docker
 
 If you want to run the project without Docker:
